@@ -1,0 +1,13 @@
+[tools]
+go = "latest"
+
+[env]
+# aw-qt finds watchers in ~/.local/bin, mise's default GOBIN is version-specific
+GOBIN = "{{env.HOME}}/.local/bin"
+
+[tasks.install]
+description = "Install all watchers to ~/.local/bin"
+run = "go install ./..."
+
+[tasks.test]
+run = "go test ./..."

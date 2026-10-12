@@ -1,0 +1,2 @@
+# mise.toml is ignored globally, but here it sets GOBIN and the install task
+!mise.toml
